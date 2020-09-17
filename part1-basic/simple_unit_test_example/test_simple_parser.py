@@ -16,7 +16,7 @@ class TestSimpleParser(unittest.TestCase):
         self.assertEqual(1, sp.parse_and_sum())
     def test_parser_and_sum_with_comma(self):
         sp = SimpleParser('1, 2')
-        self.assertEqual((1, 2), sp.parse_and_sum())
+        self.assertRaises(ValueError, sp.parse_and_sum)
 
 if __name__ == "__main__":
     unittest.main()
