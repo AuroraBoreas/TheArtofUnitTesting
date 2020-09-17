@@ -6,6 +6,17 @@ using "stubs" to break dependencies
 A stub is a controllable replacement for an existing dependency (or collaborator) in the system. 
 By using a stub, you can test your code without dealing with the dependency directly. 
 
+* concepts: test pattern names <<xUnit Test Pattern>>
+
++---------+-------------------------
+| pattern |
++=========+
+| fakes   |
++
+| stubs   |
++
+| mocks   |
+
 ? concept: external dependency
 An external dependency is an object in your system that your code under
 test interacts with, and over which you have no control. 
