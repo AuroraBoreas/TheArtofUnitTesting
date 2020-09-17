@@ -1,7 +1,7 @@
 class SimpleParser:
     def __init__(self, numbers: str):
         self.numbers = numbers
-    def parse_and_sum(self):
+    def parse_and_sum(self) -> int:
         if not len(self.numbers):
             return 0
         if not ',' in self.numbers:
