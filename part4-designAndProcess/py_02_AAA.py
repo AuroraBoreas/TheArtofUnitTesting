@@ -36,4 +36,10 @@ would answer with real data or have undesirable side effects.
 Mocks are objects that register calls they receive.
 In test assertion we can verify on Mocks that all expected actions were performed.
 
+## TIP
+
+The easiest way to tell we’re dealing with a stub is to notice that the
+stub can never fail the test. The asserts the test uses are always against
+the class under test.
+
 """
